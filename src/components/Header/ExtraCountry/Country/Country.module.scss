@@ -1,0 +1,31 @@
+.wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 150px;
+    padding: 0 20px;
+    height: 100%;
+    border: 1px solid white;
+    border-bottom: 0;
+    border-top: 0;
+    // background-color: aqua;
+}
+
+.icon {
+    // width: 100px;
+    // height: 100px;
+
+    img {
+        height: 20px;
+        object-fit: cover;
+    }
+}
+
+.context {
+    margin-left: 10px;
+    color: white;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: auto;
+    white-space: nowrap;
+}

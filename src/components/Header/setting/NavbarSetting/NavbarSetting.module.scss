@@ -1,0 +1,62 @@
+.wrapper {
+    // position: absolute;
+    padding-left: 18px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    h4 {
+        margin-right: 12px;
+        font-size: 16px;
+        font-weight: 300;
+        color: white;
+        width: 20px;
+    }
+
+    sub {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.setting-box {
+    position: absolute;
+    background-color: white;
+    top: 40px;
+    left: -40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // width: 160px;
+    height: 40px;
+    border: 1px solid var(--bored-color);
+    border-radius: 40px;
+    // animation: show 2s all;
+    // left: -40px;
+    display: flex;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        border: 10px solid transparent;
+        border-bottom-color: white;
+    }
+}
+
+.setting-f,
+.setting-c {
+    padding: 8px 20px;
+    margin: 0 2px;
+    font-size: 16px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--cold-weather);
+    color: white;
+    border-radius: 40px;
+    padding: 8px 26px;
+}

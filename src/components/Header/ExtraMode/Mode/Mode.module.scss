@@ -1,0 +1,14 @@
+.wrapper {
+    color: white;
+    margin: 0 100px;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: 2px solid white;
+}

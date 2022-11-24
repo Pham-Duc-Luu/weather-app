@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-navbar);
+    height: 40px;
+}
+
+.wrapper-mode {
+    height: 100%;
+}
+
+.active {
+    border-bottom: 4px solid white;
+}

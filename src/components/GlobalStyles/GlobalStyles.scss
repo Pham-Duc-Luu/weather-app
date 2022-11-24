@@ -1,0 +1,36 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --hot-weather: #59516e;
+    --cold-weather: #022d50;
+    --bored-color: #ccc;
+    --black-navbar: rgba(0, 0, 0, 0.4);
+    --overlay: rgba(0, 0, 0, 0.55);
+    --shadow: 0 0 12px 0 rgb(0 0 0 / 20%);
+    --weather-text: #1b4de4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    outline: none;
+    border: none;
+}

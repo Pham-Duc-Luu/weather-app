@@ -1,0 +1,27 @@
+.wrapper {
+    background-color: white;
+    width: 1000px;
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    margin: 12px;
+}
+
+.header {
+    margin: 30px 30px 12px;
+    display: flex;
+    align-items: baseline;
+}
+
+.main {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.place {
+    margin-left: 18px;
+    font-weight: 300;
+}
+
+.time {
+    margin: 0 30px 30px;
+}

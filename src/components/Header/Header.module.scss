@@ -1,0 +1,26 @@
+.wrapper {
+    background-color: var(--cold-weather);
+    // height: 100px;
+    width: 100%;
+    // position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    > .header {
+        padding: 0 200px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin: 20px 0;
+    }
+}
+
+.header-brand {
+    width: 50px;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
