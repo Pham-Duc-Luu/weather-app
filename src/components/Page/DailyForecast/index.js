@@ -26,19 +26,19 @@ function DailyForecast() {
                         <div className={cx('time')}>{language === 'VI' ? 'Hôm nay' : 'Today'}</div>
                         <div className={cx('temp')}>
                             {temp === 'c'
-                                ? data.forecast.forecastday[0].day.maxtemp_c
-                                : data.forecast.forecastday[0].day.maxtemp_f}
+                                ? data?.forecast?.forecastday[0]?.day?.maxtemp_c
+                                : data?.forecast?.forecastday[0]?.day?.maxtemp_f}
                             °
                         </div>
                         <div className={cx('temp-min')}>
                             {temp === 'c'
-                                ? data.forecast.forecastday[0].day.mintemp_c
-                                : data.forecast.forecastday[0].day.mintemp_f}
+                                ? data?.forecast?.forecastday[0]?.day?.mintemp_c
+                                : data?.forecast?.forecastday[0]?.day?.mintemp_f}
                             °
                         </div>
                         <img
                             className={cx('icon')}
-                            src={require(`../../../img/main_icon/weather/64x64/${data.forecast.forecastday[0].day.condition.icon.replace(
+                            src={require(`../../../img/main_icon/weather/64x64/${data?.forecast?.forecastday[0]?.day?.condition.icon.replace(
                                 '//cdn.weatherapi.com/weather/64x64/',
                                 '',
                             )}`)}
@@ -47,25 +47,25 @@ function DailyForecast() {
                     </li>
                     <li>
                         <div className={cx('time')}>
-                            {data.forecast.forecastday[1].date.split('-')[2]}
+                            {data?.forecast?.forecastday[1]?.date?.split('-')[2]}
                             {' Th'}
-                            {data.forecast.forecastday[1].date.split('-')[1]}
+                            {data?.forecast?.forecastday[1]?.date?.split('-')[1]}
                         </div>
                         <div className={cx('temp')}>
                             {temp === 'c'
-                                ? data.forecast.forecastday[1].day.maxtemp_c
-                                : data.forecast.forecastday[1].day.maxtemp_f}
+                                ? data?.forecast?.forecastday[1]?.day?.maxtemp_c
+                                : data?.forecast?.forecastday[1]?.day?.maxtemp_f}
                             °
                         </div>
                         <div className={cx('temp-min')}>
                             {temp === 'c'
-                                ? data.forecast.forecastday[1].day.mintemp_c
-                                : data.forecast.forecastday[1].day.mintemp_f}
+                                ? data?.forecast?.forecastday[1]?.day?.mintemp_c
+                                : data?.forecast?.forecastday[1]?.day?.mintemp_f}
                             °
                         </div>
                         <img
                             className={cx('icon')}
-                            src={require(`../../../img/main_icon/weather/64x64/${data.forecast.forecastday[1].day.condition.icon.replace(
+                            src={require(`../../../img/main_icon/weather/64x64/${data?.forecast?.forecastday[1]?.day?.condition.icon.replace(
                                 '//cdn.weatherapi.com/weather/64x64/',
                                 '',
                             )}`)}
@@ -74,25 +74,25 @@ function DailyForecast() {
                     </li>
                     <li>
                         <div className={cx('time')}>
-                            {data.forecast.forecastday[2].date.split('-')[2]}
+                            {data?.forecast?.forecastday[2]?.date?.split('-')[2]}
                             {' Th'}
-                            {data.forecast.forecastday[2].date.split('-')[1]}
+                            {data?.forecast?.forecastday[2]?.date?.split('-')[1]}
                         </div>
                         <div className={cx('temp')}>
                             {temp === 'c'
-                                ? data.forecast.forecastday[2].day.maxtemp_c
-                                : data.forecast.forecastday[2].day.maxtemp_f}
+                                ? data?.forecast?.forecastday[2]?.day?.maxtemp_c
+                                : data?.forecast?.forecastday[2]?.day?.maxtemp_f}
                             °
                         </div>
                         <div className={cx('temp-min')}>
                             {temp === 'c'
-                                ? data.forecast.forecastday[2].day.mintemp_c
-                                : data.forecast.forecastday[2].day.mintemp_f}
+                                ? data?.forecast?.forecastday[2]?.day?.mintemp_c
+                                : data?.forecast?.forecastday[2]?.day?.mintemp_f}
                             °
                         </div>
                         <img
                             className={cx('icon')}
-                            src={require(`../../../img/main_icon/weather/64x64/${data.forecast.forecastday[2].day.condition.icon.replace(
+                            src={require(`../../../img/main_icon/weather/64x64/${data?.forecast?.forecastday[2]?.day?.condition.icon.replace(
                                 '//cdn.weatherapi.com/weather/64x64/',
                                 '',
                             )}`)}
@@ -101,25 +101,25 @@ function DailyForecast() {
                     </li>
                     <li>
                         <div className={cx('time')}>
-                            {data.forecast.forecastday[3].date.split('-')[2]}
+                            {data?.forecast?.forecastday[3]?.date?.split('-')[2]}
                             {' Th'}
-                            {data.forecast.forecastday[3].date.split('-')[1]}
+                            {data?.forecast?.forecastday[3]?.date?.split('-')[1]}
                         </div>
                         <div className={cx('temp')}>
                             {temp === 'c'
-                                ? data.forecast.forecastday[3].day.maxtemp_c
-                                : data.forecast.forecastday[3].day.maxtemp_f}
+                                ? data?.forecast?.forecastday[3]?.day?.maxtemp_c
+                                : data?.forecast?.forecastday[3]?.day?.maxtemp_f}
                             °
                         </div>
                         <div className={cx('temp-min')}>
                             {temp === 'c'
-                                ? data.forecast.forecastday[3].day.mintemp_c
-                                : data.forecast.forecastday[3].day.mintemp_f}
+                                ? data?.forecast?.forecastday[3]?.day?.mintemp_c
+                                : data?.forecast?.forecastday[3]?.day?.mintemp_f}
                             °
                         </div>
                         <img
                             className={cx('icon')}
-                            src={require(`../../../img/main_icon/weather/64x64/${data.forecast.forecastday[3].day.condition.icon.replace(
+                            src={require(`../../../img/main_icon/weather/64x64/${data?.forecast?.forecastday[3]?.day?.condition.icon.replace(
                                 '//cdn.weatherapi.com/weather/64x64/',
                                 '',
                             )}`)}
@@ -128,25 +128,25 @@ function DailyForecast() {
                     </li>
                     <li>
                         <div className={cx('time')}>
-                            {data.forecast.forecastday[4].date.split('-')[2]}
+                            {data?.forecast?.forecastday[4]?.date?.split('-')[2]}
                             {' Th'}
-                            {data.forecast.forecastday[4].date.split('-')[1]}
+                            {data?.forecast?.forecastday[4]?.date?.split('-')[1]}
                         </div>
                         <div className={cx('temp')}>
                             {temp === 'c'
-                                ? data.forecast.forecastday[4].day.maxtemp_c
-                                : data.forecast.forecastday[4].day.maxtemp_f}
+                                ? data?.forecast?.forecastday[4]?.day?.maxtemp_c
+                                : data?.forecast?.forecastday[4]?.day?.maxtemp_f}
                             °
                         </div>
                         <div className={cx('temp-min')}>
                             {temp === 'c'
-                                ? data.forecast.forecastday[4].day.mintemp_c
-                                : data.forecast.forecastday[4].day.mintemp_f}
+                                ? data?.forecast?.forecastday[4]?.day?.mintemp_c
+                                : data?.forecast?.forecastday[4]?.day?.mintemp_f}
                             °
                         </div>
                         <img
                             className={cx('icon')}
-                            src={require(`../../../img/main_icon/weather/64x64/${data.forecast.forecastday[4].day.condition.icon.replace(
+                            src={require(`../../../img/main_icon/weather/64x64/${data?.forecast?.forecastday[4]?.day?.condition.icon.replace(
                                 '//cdn.weatherapi.com/weather/64x64/',
                                 '',
                             )}`)}

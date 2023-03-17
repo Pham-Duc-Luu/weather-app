@@ -25,8 +25,8 @@ function ExtraCountry() {
             .then((result) => {
                 countries = result.splice(1, 8);
                 setRender(true);
-            });
-        // .catch((error) => console.log('error', error));
+            })
+            .catch((error) => console.log('error', error));
     }, [render]);
 
     return (

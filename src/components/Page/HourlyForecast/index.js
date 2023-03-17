@@ -23,82 +23,82 @@ function HourlyForecast() {
                 <ul className={cx('main')}>
                     <li>
                         <div className={cx('time')}>1h</div>
-                        <div className={cx('temp')}>{data.forecast.forecastday[0].hour[1].time.split(' ')[1]}</div>
+                        <div className={cx('temp')}>{data?.forecast?.forecastday[0]?.hour[1]?.time?.split(' ')[1]}</div>
                         <img
                             className={cx('icon')}
-                            src={require(`../../../img/main_icon/weather/64x64/${data.forecast.forecastday[0].hour[1].condition.icon.replace(
+                            src={require(`../../../img/main_icon/weather/64x64/${data?.forecast?.forecastday[0]?.hour[1]?.condition?.icon?.replace(
                                 '//cdn.weatherapi.com/weather/64x64/',
                                 '',
                             )}`)}
                         />
                         <div className={cx('rain')}>
                             {temp === 'c'
-                                ? `${data.forecast.forecastday[0].hour[1].temp_c} °C`
-                                : `${data.forecast.forecastday[0].hour[1].temp_f} °F`}
+                                ? `${data?.forecast?.forecastday[0]?.hour[1].temp_c} °C`
+                                : `${data?.forecast?.forecastday[0]?.hour[1].temp_f} °F`}
                         </div>
                     </li>
                     <li>
                         <div className={cx('time')}>6h</div>
-                        <div className={cx('temp')}>{data.forecast.forecastday[0].hour[6].time.split(' ')[1]}</div>
+                        <div className={cx('temp')}>{data?.forecast?.forecastday[0]?.hour[6].time.split(' ')[1]}</div>
                         <img
                             className={cx('icon')}
-                            src={require(`../../../img/main_icon/weather/64x64/${data.forecast.forecastday[0].hour[6].condition.icon.replace(
+                            src={require(`../../../img/main_icon/weather/64x64/${data?.forecast?.forecastday[0]?.hour[6].condition.icon.replace(
                                 '//cdn.weatherapi.com/weather/64x64/',
                                 '',
                             )}`)}
                         />
                         <div className={cx('rain')}>
                             {temp === 'c'
-                                ? `${data.forecast.forecastday[0].hour[6].temp_c} °C`
-                                : `${data.forecast.forecastday[0].hour[6].temp_f} °F`}
+                                ? `${data?.forecast?.forecastday[0]?.hour[6].temp_c} °C`
+                                : `${data?.forecast?.forecastday[0]?.hour[6].temp_f} °F`}
                         </div>
                     </li>
                     <li>
                         <div className={cx('time')}>11h</div>
-                        <div className={cx('temp')}>{data.forecast.forecastday[0].hour[11].time.split(' ')[1]}</div>
+                        <div className={cx('temp')}>{data?.forecast?.forecastday[0]?.hour[11].time.split(' ')[1]}</div>
                         <img
                             className={cx('icon')}
-                            src={require(`../../../img/main_icon/weather/64x64/${data.forecast.forecastday[0].hour[11].condition.icon.replace(
+                            src={require(`../../../img/main_icon/weather/64x64/${data?.forecast?.forecastday[0]?.hour[11].condition.icon.replace(
                                 '//cdn.weatherapi.com/weather/64x64/',
                                 '',
                             )}`)}
                         />
                         <div className={cx('rain')}>
                             {temp === 'c'
-                                ? `${data.forecast.forecastday[0].hour[11].temp_c} °C`
-                                : `${data.forecast.forecastday[0].hour[11].temp_f} °F`}
+                                ? `${data?.forecast?.forecastday[0]?.hour[11].temp_c} °C`
+                                : `${data?.forecast?.forecastday[0]?.hour[11].temp_f} °F`}
                         </div>
                     </li>
                     <li>
                         <div className={cx('time')}>16h</div>
-                        <div className={cx('temp')}>{data.forecast.forecastday[0].hour[16].time.split(' ')[1]}</div>
+                        <div className={cx('temp')}>{data?.forecast?.forecastday[0]?.hour[16].time.split(' ')[1]}</div>
                         <img
                             className={cx('icon')}
-                            src={require(`../../../img/main_icon/weather/64x64/${data.forecast.forecastday[0].hour[16].condition.icon.replace(
+                            src={require(`../../../img/main_icon/weather/64x64/${data?.forecast?.forecastday[0]?.hour[16].condition.icon.replace(
                                 '//cdn.weatherapi.com/weather/64x64/',
                                 '',
                             )}`)}
                         />
                         <div className={cx('rain')}>
                             {temp === 'c'
-                                ? `${data.forecast.forecastday[0].hour[16].temp_c} °C`
-                                : `${data.forecast.forecastday[0].hour[16].temp_f} °F`}
+                                ? `${data?.forecast?.forecastday[0]?.hour[16].temp_c} °C`
+                                : `${data?.forecast?.forecastday[0]?.hour[16].temp_f} °F`}
                         </div>
                     </li>
                     <li>
                         <div className={cx('time')}>21h</div>
-                        <div className={cx('temp')}>{data.forecast.forecastday[0].hour[21].time.split(' ')[1]}</div>
+                        <div className={cx('temp')}>{data?.forecast?.forecastday[0]?.hour[21].time.split(' ')[1]}</div>
                         <img
                             className={cx('icon')}
-                            src={require(`../../../img/main_icon/weather/64x64/${data.forecast.forecastday[0].hour[21].condition.icon.replace(
+                            src={require(`../../../img/main_icon/weather/64x64/${data?.forecast?.forecastday[0]?.hour[21].condition.icon.replace(
                                 '//cdn.weatherapi.com/weather/64x64/',
                                 '',
                             )}`)}
                         />
                         <div className={cx('rain')}>
                             {temp === 'c'
-                                ? `${data.forecast.forecastday[0].hour[21].temp_c} °C`
-                                : `${data.forecast.forecastday[0].hour[21].temp_f} °F`}
+                                ? `${data?.forecast?.forecastday[0]?.hour[21].temp_c} °C`
+                                : `${data?.forecast?.forecastday[0]?.hour[21].temp_f} °F`}
                         </div>
                     </li>
                 </ul>

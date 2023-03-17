@@ -18,8 +18,8 @@ function HeaderPage() {
     let dateTime;
 
     if (data) {
-        var myIcon = data.current.condition.icon.replace('//cdn.weatherapi.com/weather/64x64', '');
-        dateTime = handleDate(data.current.last_updated, language, true);
+        var myIcon = data?.current?.condition?.icon?.replace('//cdn.weatherapi.com/weather/64x64', '');
+        dateTime = handleDate(data?.current?.last_updated, language, true);
     }
 
     return (
@@ -33,15 +33,15 @@ function HeaderPage() {
                     backgroundPosition: 'center',
                 }}
             >
-                <div className={cx('name')}>{data.location.name + ', ' + data.location.country}</div>
+                <div className={cx('name')}>{data?.location?.name + ', ' + data?.location?.country}</div>
 
                 <div className={cx('main')}>
                     <div>
                         <div className={cx('content')}>
-                            {temp === 'c' ? data.current.temp_c : data.current.temp_f}{' '}
+                            {temp === 'c' ? data?.current?.temp_c : data?.current?.temp_f}{' '}
                             <div className={cx('temp')}>°C</div>
                         </div>
-                        <div className={cx('describe')}>{data.current.condition.text}</div>
+                        <div className={cx('describe')}>{data?.current?.condition.text}</div>
                         <div className={cx('date')}>
                             {language === 'VI'
                                 ? `${dateTime.day} ,ngày ${dateTime.date}, ${dateTime.month}`

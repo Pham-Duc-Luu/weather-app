@@ -13,8 +13,10 @@ function MainCity({ children }) {
             redirect: 'follow',
         };
 
+        console.log(process.env.REACT_APP_WEATHER_KEY);
+
         fetch(
-            `https://api.weatherapi.com/v1/forecast.json?key=75940f03a8b748219f4101531222411&q=${countryInput}&days=10&aqi=no&alerts=no`,
+            `https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_WEATHER_KEY}&q=${countryInput}&days=10&aqi=no&alerts=no`,
             requestOptions,
         )
             .then((response) => response.json())

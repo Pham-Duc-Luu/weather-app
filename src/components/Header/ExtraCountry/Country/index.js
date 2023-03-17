@@ -17,7 +17,7 @@ function Country({ name }) {
         };
 
         fetch(
-            'http://api.weatherapi.com/v1/current.json?key=6446b4457a91493191a33819222709&q=' + name + '&aqi=no',
+            `http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_KEY}&q=${name}aqi=no`,
             requestOptions,
         )
             .then((response) => response.json())
